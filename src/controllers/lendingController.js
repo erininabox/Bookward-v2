@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { default: TeachersModel } = require('../../../bookward-client/src/models/TeachersModel');
-const { lendingModel } = require('../models');
-const models = require('../models');
+const { lendingModel } = require('../../models');
+const models = require('../../models');
 
 router.get('/', (req, res) => {
     models.lendingModel.find({}, (err, foundLendingRecord) => {
